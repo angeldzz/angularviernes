@@ -16,7 +16,7 @@ export class PersonasComponent implements OnInit{
   }
   ngOnInit(): void {
     this._service.getPersonas().then(response => {
-        this.personas = response
-    })
+      this.personas = response;
+    });
   }
 }
