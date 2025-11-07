@@ -36,7 +36,7 @@ export class ServicePersonas{
         fetch(url + request)
         .then(response => response.json())
         .then(response => {
-            resolve(response.data)
+            resolve(response)
             })
         })
     }

@@ -15,7 +15,7 @@ export class PersonasComponent implements OnInit{
   constructor(private _service: ServicePersonas) {
   }
   ngOnInit(): void {
-    this._service.getPersonasAxios().then(response => {
+    this._service.getPersonasFetch().then(response => {
       this.personas = response;
     });
   }
